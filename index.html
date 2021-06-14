@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="icon" href="./Assets/garfo.svg" type="image/svg">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+  <title>Churrascômetro</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Churrascômetro</h1>
+
+    <h4>Seu churrasco mais fácil...</h4>
+    <p id="description">Coloque a quantidade de pessoas e o tempo do seu churrasco para saber o que vai precisar</p>
+    
+    <div class="inputIcons">
+      <img src="./Assets/couple.svg" alt="Número de Adultos">
+      <input id="adultos" name="adultos" type="number" placeholder="Adultos" min="0">
+    </div>
+
+    <div class="inputIcons">
+      <img src="./Assets/son.svg" alt="Número de Crianças">
+      <input id="criancas" name="criancas" type="number" placeholder="Crianças" min="0">
+    </div>
+
+    <div class="inputIcons">
+      <img src="./Assets/fast-time.svg" alt="Duração do Churrasco">
+      <input id="duracao" name="duracao" type="number" placeholder="Duração (horas)" min="1">
+    </div>
+    
+    <button onclick="limpar()">Limpar</button>
+    <button id="buttonCalcular" onclick="calcular()">Calcular</button>
+
+    <div id="result"></div>
+    <div id="copyButton">
+      <button onclick="copiar()">Copiar</button>
+    </div>
+  </div>
+  <div id="icons">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+  from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+  <script src="./scripts/script.js"></script>
+
+</body>
+</html>
